@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: Calibri, sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: Montserrat, serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: Montserrat, serif;
+    font-weight: lighter;
+    text-align: left;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 36px;
+    font-family: Montserrat, serif;
+    font-weight: bold;
+    color: darkblue;
+    /* padding-left: 10px; */
+    margin-bottom: 8px;
+    position: relative;
+}
+
+h3::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    background-color: transparent;
+    /* border-left: 2px solid black; */
+    border-bottom: 2px solid black;
+    /* left: 4px; */
+    z-index: 1;
+}
+
+h4 {
+    font-family: Montserrat, serif;
+    font-size: 18px;
+    font-weight: lighter;
+    color: darkblue;
+}
+
+p {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+dt {
+    margin-bottom: 4px;
+}
+
+ul {
+    list-style: none;
+    list-style-position: inside;
+    margin-bottom: 12px;
+}
+
+li {
+    margin-bottom: 4px;
+    padding: 1px;
+    list-style-type: circle;
+
+}
+
+.header {
+    flex: 1 1 auto;
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.p-header {
+    margin-bottom: 20px;
+}
+
+.p-text {    
+    margin-bottom: 5px;
+    line-height: 1.4em
+    /* text-indent: 20px; */
+}
+
+.p-date {
+    margin-bottom: 8px;
+    font-weight: bolder;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 20px;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.main {
+    /* flex: 1 1 auto;
+    display: flex; */
+    gap: 10px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.container-left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-center {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    gap: 20px;
+}
+
+.avatar img {
+    width: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footer {
+    padding: 5px 0;
+    align-self: center;
+}
